@@ -29,18 +29,30 @@
  // "The nationality of my father is " + myFather.gender; 
 
 
- const sneakers1 = {
-  firstName: "Nike",
-  lastName: "airmax",
-  price: 100,
-  Color: "mixed"
+// const sneakers1 = {
+ // firstName: "Nike",
+ // lastName: "airmax",
+ // price: 100,
+ // Color: "mixed"
+//};
+
+
+//const sneakers2 = {firstName: "Adidas",lastName: "Yeezy"};
+
+//Object.assign(sneakers1, sneakers2);
+
+
+//let text = Object.entries(sneakers1);
+//document.getElementById("demo").innerHTML = text;
+
+const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
 };
 
-
-const sneakers2 = {firstName: "Adidas",lastName: "Yeezy"};
-
-Object.assign(sneakers1, sneakers2);
-
-
-let text = Object.entries(sneakers1);  // returns an array
+let text = Object.values(person)
 document.getElementById("demo").innerHTML = text;
+
+// value and entries  bizga objectni array qilib olishimizda yordam beradi farqi biri properti bittasi omidi
