@@ -56,3 +56,5 @@ let text = Object.values(person)
 document.getElementById("demo").innerHTML = text;
 
 // value and entries  bizga objectni array qilib olishimizda yordam beradi farqi biri properti bittasi omidi
+
+
