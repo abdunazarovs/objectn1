@@ -45,16 +45,27 @@
 //let text = Object.entries(sneakers1);
 //document.getElementById("demo").innerHTML = text;
 
-const person = {
-  firstName : "John",
-  lastName  : "Doe",
-  age     : 50,
-  eyeColor  : "blue"
-};
+//const person = {
+//  firstName : "John",
+ // lastName  : "Doe",
+  //age     : 50,
+ // eyeColor  : "blue"
+//};
 
-let text = Object.values(person)
-document.getElementById("demo").innerHTML = text;
+//let text = Object.values(person)
+//document.getElementById("demo").innerHTML = text;
 
 // value and entries  bizga objectni array qilib olishimizda yordam beradi farqi biri properti bittasi omidi
 
 
+const btn = document.querySelector("button");  
+//htmlda elementni ovolodi querySelector
+
+function random(number) {
+  return Math.floor(Math.random() * (number + 1));
+}
+
+btn.addEventListener("click", () => {
+  const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
