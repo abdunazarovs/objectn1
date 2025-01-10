@@ -69,3 +69,8 @@ btn.addEventListener("click", () => {
   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
   document.body.style.backgroundColor = rndCol;
 });
+
+//function myFunction() {
+ // var x = document.getElementById("mySelect").value;
+ // document.getElementById("demo").innerHTML = "You selected: " + x;
+//}
